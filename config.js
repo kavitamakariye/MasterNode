@@ -5,10 +5,10 @@
 
 //Container for all the envrionments
 
-var envrionments = {};
+var environments = {};
 
 //Staging (default) environment
-envrionments.staging = {
+environments.staging = {
     'httpPort': "3000",
     'httpsPort': '3001',
     "envName" : "staging"
