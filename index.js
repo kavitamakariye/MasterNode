@@ -10,7 +10,13 @@ var url = require('url');// The url module splits up a web address into readable
 var StringDecoder = require('string_decoder').StringDecoder;
 var config = require('./config');
 var fs = require('fs');
+var _data = require('./lib/data')
+//TESTING
 
+_data.delete('test','newFile',function(err){
+    console.log('this was the error ',err);
+    
+})
 //The server should respond to all the requests with a string
 
 //Instantiate the HTTP server
